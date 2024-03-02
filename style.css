@@ -1,0 +1,137 @@
+body {
+    font-family: SF Pro Display;
+    background-color: #18191a;
+    color: #E4E6Eb;
+    margin-top: 2%;
+}
+
+input[type='radio'] {
+    accent-color: #9c3e22;
+    border: 0px;
+    width: 10%;
+    height: 1.5em;
+    margin-top: 2%;
+    vertical-align: middle;
+    margin-bottom: 2%;
+}
+
+button {
+    font-family: SF Pro Display;
+    font-weight: 300;
+    font-size: 1.4em;
+    padding: 7px;
+    background-color: #9c3e22;
+    border: 3px #18191a solid;
+    border-radius: 50px;
+    color: #E4E6Eb;
+}
+
+#mainDiv {
+    width: 35%;
+    background-color: #242526;
+    border: 5px #E4E6Eb solid;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px #e4e6eb9a;
+}
+
+#title {
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    border-bottom: 1px #9c3e22 solid;
+    padding-bottom: 3%;
+}
+
+#mainInput {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 4%;
+    background-color: #E4E6Eb;
+    border: 3px #9c3e22 solid;
+    border-radius: 10px;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#originRadioDiv {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    margin-left: 9%;
+}
+
+#destRadioDiv {
+    float: right;
+    text-align: right;
+    width: 40%;
+    margin-right: 5%;
+}
+
+#submitBtn {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    transition: background-color 0.2s;
+}
+
+#submitBtn:hover {
+    background-color: #742e19;
+}
+
+#submitBtn:active {
+    background-color: #18191a;
+}
+
+#resultLabel {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em;
+    color: gray;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 5%;
+}
+
+#indicatorArrow {
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+    margin: 0px;
+    font-size: 3em;
+}
+
+#resultLabelNew {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 2px 2px 5px #000000;
+    font-weight: 800;
+    margin: 0px;
+    margin-bottom: 5%;
+}
+
+#disclaimer {
+    font-weight: 200;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.rdoCategoryTitle {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
