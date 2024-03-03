@@ -1,5 +1,77 @@
+@font-face {
+    font-family: 'sf_pro_textregular';
+    src: url('fonts/eot/sfprotext-regular-webfont.eot');
+    src: url('fonts/eot/sfprotext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprotext-regular-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprotext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displaybold';
+    src: url('fonts/eot/sfprodisplay-bold-webfont.eot');
+    src: url('fonts/eot/sfprodisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprodisplay-bold-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprodisplay-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displaythin';
+    src: url('fonts/eot/sfprodisplay-thin-webfont.eot');
+    src: url('fonts/eot/sfprodisplay-thin-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprodisplay-thin-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprodisplay-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displayheavy';
+    src: url('fonts/eot/sfprodisplay-heavy-webfont.eot');
+    src: url('fonts/eot/sfprodisplay-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprodisplay-heavy-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprodisplay-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_textlight';
+    src: url('fonts/eot/sfprotext-light-webfont.eot');
+    src: url('fonts/eot/sfprotext-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprotext-light-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprotext-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displayregular';
+    src: url('fonts/eot/sfprodisplay-regular-webfont.eot');
+    src: url('fonts/eot/sfprodisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprodisplay-regular-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprodisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displaylight';
+    src: url('fonts/eot/sfprodisplay-light-webfont.eot');
+    src: url('fonts/eot/sfprodisplay-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/woff2/sfprodisplay-light-webfont.woff2') format('woff2'),
+        url('fonts/woff/sfprodisplay-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
-    font-family: SF Pro Display;
+    font-family: 'sf_pro_displayregular';
     background-color: #18191a;
     color: #E4E6Eb;
     margin-top: 2%;
@@ -16,8 +88,7 @@ input[type='radio'] {
 }
 
 button {
-    font-family: SF Pro Display;
-    font-weight: 300;
+    font-family: 'sf_pro_displaylight';
     font-size: 1.4em;
     padding: 7px;
     background-color: #9c3e22;
@@ -42,7 +113,7 @@ button {
 #title {
     text-align: center;
     width: 100%;
-    font-weight: 800;
+    font-size: 2.2em;
     border-bottom: 1px #9c3e22 solid;
     padding-bottom: 3%;
 }
@@ -55,9 +126,8 @@ button {
     background-color: #E4E6Eb;
     border: 3px #9c3e22 solid;
     border-radius: 10px;
-    font-family: SF Pro Display;
-    font-weight: 500;
-    font-size: 1.2em;
+    font-family: "sf_pro_displayregular";
+    font-size: 1.3em;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
