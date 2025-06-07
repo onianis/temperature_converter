@@ -13,7 +13,10 @@ resultLabel = document.getElementById("resultLabel");
 indicatorArrow = document.getElementById("indicatorArrow");
 resultLabelNew = document.getElementById("resultLabelNew");
 
-let receivedInput, originUnit, destinationUnit, result;
+let receivedInput;
+let originUnit;
+let destinationUnit;
+let result;
 
 receivedInput = 0;
 result = 0;
@@ -28,8 +31,10 @@ toBlanker.disabled = true;
 fromBlanker.hidden = true;
 toBlanker.hidden = true;
 
-function temp_unit_mapper() {
-    switch (true) {
+function temp_unit_mapper() 
+{
+    switch (true) 
+    {
         case fromC.checked:
             originUnit = "C";
             break;
@@ -41,7 +46,8 @@ function temp_unit_mapper() {
             break;
     }
 
-    switch (true) {
+    switch (true) 
+    {
         case toC.checked:
             destinationUnit = "C";
             break;
@@ -54,33 +60,64 @@ function temp_unit_mapper() {
     }
 }
 
-submitBtn.onclick = function () {
+submitBtn.onclick = function () 
+{
     receivedInput = mainInput.value;
 
-    if (isNaN(receivedInput) || receivedInput == "") {
+    if (isNaN(receivedInput) || receivedInput == "") 
+    {
         mainInput.value = "";
         window.alert("Invalid Input. Try again.");
     }
-    else {
+    else 
+    {
         receivedInput = Number(receivedInput);
         temp_unit_mapper();
-        if (originUnit == destinationUnit) result = receivedInput;
-        else if (originUnit == "C") {
-            if (destinationUnit == "F") result = (receivedInput * (9 / 5)) + 32;
-            else if (destinationUnit == "K") result = receivedInput + 273.15;
+        if (originUnit == destinationUnit) 
+        {
+            result = receivedInput;
         }
-        else if (originUnit == "F") {
-            if (destinationUnit == "C") result = (receivedInput - 32) * (5 / 9);
-            else if (destinationUnit == "K") result = ((receivedInput - 32) * (5 / 9)) + 273.15;
+        else if (originUnit == "C") 
+        {
+            if (destinationUnit == "F") 
+            {
+                result = (receivedInput * (9 / 5)) + 32;
+            }
+            else if 
+            {
+                (destinationUnit == "K") result = receivedInput + 273.15;
+            }
         }
-        else if (originUnit == "K") {
-            if (destinationUnit == "C") result = receivedInput - 273.15;
-            else if (destinationUnit == "F") result = ((receivedInput - 273.15) * (9 / 5)) + 32;
+        else if (originUnit == "F") 
+        {
+            if (destinationUnit == "C")
+            {
+                result = (receivedInput - 32) * (5 / 9);
+            }
+            else if 
+            {
+                (destinationUnit == "K") result = ((receivedInput - 32) * (5 / 9)) + 273.15;
+            }
+        }
+        else if (originUnit == "K") 
+        {
+            if (destinationUnit == "C") 
+            {
+                result = receivedInput - 273.15;
+            }
+            else if (destinationUnit == "F") 
+            {
+                result = ((receivedInput - 273.15) * (9 / 5)) + 32;
+            }
         }
 
-        resultLabel.textContent = receivedInput + "°" + originUnit;
+        resultLabel.textContent = receivedInput + 
+            "°" + 
+            originUnit;
         indicatorArrow.textContent = "↓";
-        resultLabelNew.textContent = result.toFixed(1) + "°" + destinationUnit;
+        resultLabelNew.textContent = result.toFixed(1) + 
+            "°" + 
+            destinationUnit;
         mainInput.value = "";
         fromBlanker.checked = true;
         toBlanker.checked = true;
